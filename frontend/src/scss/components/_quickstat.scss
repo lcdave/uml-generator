@@ -1,0 +1,21 @@
+.quickstat {
+  display: flex;
+
+  &__icon {
+    display: block;
+    font-size: rem(25);
+    margin-right: rem(28);
+  }
+
+  &__value {
+    color: $grey6;
+    font-size: rem(30);
+    font-weight: 700;
+  }
+
+  &__description {
+    color: $grey7;
+    font-size: rem(14);
+    font-weight: 500;
+  }
+}

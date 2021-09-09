@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS logs(
+id SERIAL PRIMARY KEY,
+service_id INT,
+description VARCHAR(100) DEFAULT NULL,
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+CONSTRAINT fk_service
+      FOREIGN KEY(service_id) 
+	  REFERENCES services(id)
+);

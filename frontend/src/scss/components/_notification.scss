@@ -1,0 +1,21 @@
+.notification {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: rem(-145);
+  left: 0;
+  border-radius: rem(13);
+  padding: rem(20);
+
+  &--success {
+    background-color: $green1;
+  }
+
+  &--error {
+    background-color: $red1-transparent;
+  }
+
+  &__title {
+    font-size: rem(18);
+    margin-bottom: em(15, 22);
+  }
+}

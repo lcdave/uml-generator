@@ -1,0 +1,14 @@
+// SASS FUNCTION TO CONVERT PX INTO REM
+
+// Defining base font size
+$base-size: 16;
+
+//Function to convert px value into rem
+@function rem($size, $base: $base-size) {
+  @return ($size / $base) * 1rem;
+}
+
+//Function to convert px value into em
+@function em($size, $base: $base-size) {
+  @return #{$size/$base}em;
+}

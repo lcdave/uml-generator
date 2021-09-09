@@ -1,0 +1,39 @@
+.side-navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: rem(23);
+  height: 100%;
+  width: rem($sidenavigation-width);
+  background: $white1;
+
+  &__logo {
+    width: rem(74);
+    height: rem(74);
+    margin: 0 auto;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(
+      100% - (#{$sidenavigation-logo-width}px - #{$sidenavigation-top-offset}px)
+    );
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: rem(40);
+      }
+    }
+  }
+}

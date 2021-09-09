@@ -1,0 +1,13 @@
+button {
+  padding: rem(10) rem(15);
+  font-size: rem(16);
+  background-color: $blue1;
+  border: none;
+  border-radius: rem(12);
+  cursor: pointer;
+  color: $black1;
+
+  &:hover {
+    @include darkenBackground($blue1);
+  }
+}

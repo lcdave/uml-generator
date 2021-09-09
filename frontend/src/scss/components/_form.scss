@@ -1,0 +1,49 @@
+form {
+  margin-bottom: rem(40);
+
+  input,
+  button {
+    padding: rem(10) rem(20);
+    border-radius: rem(13);
+    margin-right: rem(20);
+    font-size: rem(18);
+  }
+
+  input {
+    border: rem(2) solid $blue1-transparent;
+    width: 17%;
+
+    &:focus {
+      outline: none !important;
+      border: rem(2) solid $blue1;
+      box-shadow: 0 0 rem(10) $blue1-transparent;
+    }
+  }
+
+  button {
+    color: $white1;
+    background: $blue1;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: $blue2;
+    }
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $grey5;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $grey5;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $grey5;
+  }
+}

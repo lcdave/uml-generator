@@ -1,0 +1,46 @@
+.logs {
+  & * {
+    margin-right: rem(4);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(22);
+    margin-bottom: rem(45);
+  }
+
+  &__title {
+    flex-basis: 33.3%;
+
+    &--large {
+      flex-basis: 45%;
+    }
+
+    &--short {
+      flex-basis: 21.7%;
+    }
+  }
+
+  &__service {
+    flex-basis: 33.3%;
+  }
+
+  &__message {
+    flex-basis: 45%;
+  }
+
+  &__time {
+    flex-basis: 21.7%;
+  }
+
+  &__list {
+    margin-bottom: rem(55);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(25);
+  }
+}

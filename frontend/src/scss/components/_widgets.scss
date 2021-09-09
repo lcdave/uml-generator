@@ -1,0 +1,27 @@
+.widgets {
+  display: flex;
+  margin-bottom: rem(45);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .stacked {
+    background: none;
+    padding: 0;
+
+    & > * {
+      margin-right: 0;
+      margin-bottom: rem(45);
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    .widget {
+      width: 100% !important;
+      flex-basis: auto;
+    }
+  }
+}

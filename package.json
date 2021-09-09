@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "google-fonts-webpack-plugin": "^0.4.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "vue-axios": "^3.2.5",
+    "vue-date-fns": "^2.0.1",
+    "vue-dayjs": "^1.0.2",
+    "vue3-chart-v2": "^0.8.2"
+  }
+}

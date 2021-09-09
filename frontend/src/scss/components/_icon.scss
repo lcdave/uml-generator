@@ -1,0 +1,39 @@
+span[class*="icon-"] {
+  padding: rem(12);
+  border-radius: 50%;
+  color: $grey3;
+  cursor: pointer;
+
+  &.var_grey {
+    background-color: $grey2;
+  }
+
+  &.var_green {
+    background-color: $green1;
+
+    &.var_cta:hover {
+      @include darkenBackground($green1);
+    }
+  }
+
+  &.var_red {
+    background-color: $red1-transparent;
+
+    &:hover {
+      @include darkenBackground($red1-transparent);
+    }
+  }
+
+  &.var_purple {
+    background-color: $purple1;
+
+    &:hover {
+      @include darkenBackground($purple1);
+    }
+  }
+
+  &.is-active,
+  &:hover {
+    background-color: $blue1-transparent;
+  }
+}

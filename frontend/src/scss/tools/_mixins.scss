@@ -1,0 +1,17 @@
+/*
+* Generates dynamic styles for widget size
+*/
+@mixin widget-size() {
+  @for $i from 1 through 10 {
+    &.var_#{$i} {
+      flex-basis: $i * 10%;
+    }
+  }
+}
+
+/*
+* Darkens a background (no-brainer)
+*/
+@mixin darkenBackground($color) {
+  background: darken($color, 10%);
+}
